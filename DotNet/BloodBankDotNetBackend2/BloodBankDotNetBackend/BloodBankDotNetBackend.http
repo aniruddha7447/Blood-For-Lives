@@ -1,0 +1,6 @@
+@BloodBankDotNetBackend_HostAddress = http://localhost:5186
+
+GET {{BloodBankDotNetBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

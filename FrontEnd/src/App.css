@@ -1,0 +1,361 @@
+/* Website Background and Font */
+body {
+  background: linear-gradient(120deg, #f8fafc 0%, #f1f5f9 100%);
+  color: #23272f;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* HEADER or CTA Style */
+.header-banner {
+  background: linear-gradient(135deg, #b71c1c 60%, #1976d2 100%);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+.header-banner::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle at 80% 20%, rgba(255,255,255,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+.header-banner h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.header-banner p {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+  opacity: 0.95;
+}
+
+/* Modern Button Styles - Reduced Size */
+.donate-button, .btn, button, .submit-btn {
+  background: linear-gradient(90deg, #e53935 0%, #1976d2 100%);
+  color: #fff;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+.donate-button:hover, .btn:hover, button:hover, .submit-btn:hover {
+  background: linear-gradient(90deg, #1976d2 0%, #e53935 100%);
+  color: #fff;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 24px rgba(25, 118, 210, 0.15);
+}
+.donate-button:active, .btn:active, button:active, .submit-btn:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+}
+
+/* Section Spacing */
+section {
+  margin: 60px auto;
+  max-width: 1100px;
+  padding: 0 20px;
+}
+
+/* Cards */
+.card, .benefits-card, .info-card, .event-card-container {
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(25, 118, 210, 0.07);
+  background: #fff;
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+.card:hover, .benefits-card:hover, .info-card:hover, .event-card-container:hover {
+  box-shadow: 0 16px 48px rgba(229, 57, 53, 0.13);
+  transform: translateY(-4px) scale(1.01);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in-up {
+  animation: fadeInUp 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+/* Donate Now Fixed Button (optional) */
+.fixed-donate-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  background: linear-gradient(90deg, #c62828 0%, #1976d2 100%);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  box-shadow: 0 6px 16px rgba(25, 118, 210, 0.13);
+  z-index: 1000;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+.fixed-donate-btn:hover {
+  background: linear-gradient(90deg, #1976d2 0%, #c62828 100%);
+  transform: scale(1.05);
+}
+
+/* Enhanced Responsive Utilities */
+@media (max-width: 1200px) {
+  section {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header-banner {
+    padding: 30px 15px;
+    border-radius: 0 0 15px 15px;
+  }
+  
+  .header-banner h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  .header-banner p {
+    font-size: 1.1rem;
+  }
+  
+  section {
+    margin: 40px auto;
+    padding: 0 12px;
+  }
+  
+  .card, .benefits-card, .info-card, .event-card-container {
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-banner {
+    padding: 25px 12px;
+    border-radius: 0 0 12px 12px;
+  }
+  
+  .header-banner h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+  
+  .header-banner p {
+    font-size: 1rem;
+    margin: 8px 0 15px;
+  }
+  
+  section {
+    margin: 30px auto;
+    padding: 0 10px;
+  }
+  
+  .donate-button, .btn, button, .submit-btn {
+    font-size: 0.85rem;
+    padding: 10px 18px;
+    border-radius: 18px;
+  }
+  
+  .fixed-donate-btn {
+    font-size: 0.85rem;
+    padding: 8px 16px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 18px;
+  }
+  
+  .card, .benefits-card, .info-card, .event-card-container {
+    border-radius: 12px;
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-banner {
+    padding: 20px 10px;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .header-banner h1 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+  
+  .header-banner p {
+    font-size: 0.9rem;
+    margin: 6px 0 12px;
+  }
+  
+  section {
+    margin: 25px auto;
+    padding: 0 8px;
+  }
+  
+  .donate-button, .btn, button, .submit-btn {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+    border-radius: 16px;
+  }
+  
+  .fixed-donate-btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 16px;
+  }
+  
+  .card, .benefits-card, .info-card, .event-card-container {
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-banner {
+    padding: 18px 8px;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .header-banner h1 {
+    font-size: 1.3rem;
+    line-height: 1.1;
+  }
+  
+  .header-banner p {
+    font-size: 0.85rem;
+    margin: 5px 0 10px;
+  }
+  
+  section {
+    margin: 20px auto;
+    padding: 0 6px;
+  }
+  
+  .donate-button, .btn, button, .submit-btn {
+    font-size: 0.75rem;
+    padding: 7px 14px;
+    border-radius: 14px;
+  }
+  
+  .fixed-donate-btn {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+    right: 8px;
+    bottom: 8px;
+    border-radius: 14px;
+  }
+  
+  .card, .benefits-card, .info-card, .event-card-container {
+    border-radius: 8px;
+    margin: 8px 0;
+  }
+}
+
+/* iPhone SE and Small Android Devices */
+@media (max-width: 375px) {
+  .header-banner h1 {
+    font-size: 1.2rem;
+  }
+  
+  .header-banner p {
+    font-size: 0.8rem;
+  }
+  
+  .donate-button, .btn, button, .submit-btn {
+    font-size: 0.7rem;
+    padding: 6px 12px;
+  }
+  
+  .fixed-donate-btn {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+}
+
+/* Landscape orientation for mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .header-banner {
+    padding: 15px 10px;
+  }
+  
+  .header-banner h1 {
+    font-size: 1.6rem;
+  }
+  
+  section {
+    margin: 20px auto;
+  }
+}
+
+/* Touch-friendly improvements */
+@media (hover: none) and (pointer: coarse) {
+  .donate-button, .btn, button, .submit-btn,
+  .fixed-donate-btn {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+  
+  .card, .benefits-card, .info-card, .event-card-container {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .card:hover, .benefits-card:hover, .info-card:hover, .event-card-container:hover {
+    transform: none;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .header-banner,
+  .card, .benefits-card, .info-card, .event-card-container,
+  .donate-button, .btn, button, .submit-btn,
+  .fixed-donate-btn {
+    border-radius: 8px;
+  }
+}
+
+/* Safe area for devices with notches */
+@supports (padding: max(0px)) {
+  .header-banner {
+    padding-left: max(20px, env(safe-area-inset-left));
+    padding-right: max(20px, env(safe-area-inset-right));
+  }
+  
+  .fixed-donate-btn {
+    bottom: max(20px, env(safe-area-inset-bottom));
+    right: max(25px, env(safe-area-inset-right));
+  }
+}

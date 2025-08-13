@@ -1,0 +1,70 @@
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+}
+.card-registration .select-arrow {
+    top: 13px;
+}
+
+.signup {
+    background: #fff;
+    padding: 24px 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(25, 118, 210, 0.07);
+    transition: box-shadow 0.3s, transform 0.2s;
+}
+.signup:hover {
+    box-shadow: 0 16px 48px rgba(229, 57, 53, 0.13);
+    transform: translateY(-4px) scale(1.01);
+}
+.signupBackground {
+    background: linear-gradient(120deg, #f8fafc 0%, #f1f5f9 100%);
+    min-height: 100vh;
+    background-image: url(../../public/images/bloodbank_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+}
+
+button, .btn, .signup button {
+    background: linear-gradient(90deg, #e53935 0%, #1976d2 100%);
+    color: #fff;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 12px 32px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+}
+button:hover, .btn:hover, .signup button:hover {
+    background: linear-gradient(90deg, #1976d2 0%, #e53935 100%);
+    color: #fff;
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 6px 24px rgba(25, 118, 210, 0.15);
+}
+button:active, .btn:active, .signup button:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+}
+
+@media (max-width: 600px) {
+    .signup {
+        padding: 12px 4px;
+        border-radius: 10px;
+        font-size: 1rem;
+    }
+    button, .btn, .signup button {
+        font-size: 1rem;
+        padding: 10px 18px;
+    }
+}
+
+    

@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "7lt+mskRgQUebWZCe1l9gs9pSkW5OTvUh1cJOL9sLTs=",
+  "Source": "BloodBankDotNetBackend",
+  "BasePath": "_content/BloodBankDotNetBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
