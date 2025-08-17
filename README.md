@@ -14,8 +14,6 @@
   - [Installation](#installation)
   - [Running the Application](#running-the-application)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 - [Contact / Support](#contact--support)
 
 ---
